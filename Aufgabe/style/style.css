@@ -1,0 +1,157 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #730000;
+}
+
+/* Header */
+header {
+    margin-top: 0;
+    width: 100%;
+    min-height: 65px;
+    max-height: 65px;
+    background-color: #360000;
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    border-bottom: 4px solid #000000;
+}
+header ul {
+    list-style: none;
+    display: inline-flex;
+}
+header ul li {
+    margin: 0 6%;
+    color: white;
+    text-align: center;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Abril;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 0px 5px 10px rgba(150, 150, 150, 1);
+}
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    min-width: 80%;
+    min-height: 80%;
+}
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+article {
+    margin: 2% 2%;
+    min-width: 30%;
+    max-width: 30%;
+    height: 40%;
+    border: 5px solid white;
+    text-align: center;
+    padding: 0% 2%;
+    color: white;
+}
+article h1 {
+    font-size: 35px;
+    font-family: Lobster;
+    text-shadow: 0px 5px 10px rgba(150, 150, 150, 1);
+}
+article h1::first-letter{
+    font-family: Abril;
+    font-size: 40px;
+    text-shadow: 0px 5px 10px rgba(150, 150, 150, 1);
+}
+article p {
+    font-family: Satisfy;
+    font-size: 25px;
+}
+article p.small {
+    font-variant: small-caps;
+}
+article.bg {
+    opacity: 0.6;
+    height: auto;
+    background: url(../img/foto1.jpg);
+}
+
+.spacer {
+    min-width: 60%;
+    max-width: 60%;
+    min-height: 20%;
+}
+.spacer p {
+    font-family: Archi;
+    text-shadow: 0px 5px 10px rgba(150, 150, 150, 1);
+}
+
+ul.b {
+    list-style-type: georgian;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #A80000;
+    border-top: 3px solid black;
+    text-align: center;
+    color: white;
+}
+
+/* Repo */
+@media screen and (max-width:720px) {
+    section {
+        display: block;
+    }
+    article {
+        max-width: 100%;
+    }
+    .spacer {
+        max-width: 100%;
+    }
+    footer {
+        position: relative;
+    }
+}
+
+/* Fonts */
+@font-face {
+    font-family: Abril;
+    src: url(..//style/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: Lobster;
+    src: url(../style/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: Archi;
+    src: url(../style/ArchitectsDaughter-Regular.ttf);
+}
+@font-face {
+    font-family: Satisfy;
+    src: url(../style/Satisfy-Regular.ttf);
+}
+
+/* Palleto
+
+.color-primary-0 { color: #360000 }
+.color-primary-1 { color: #2A0000 }
+.color-primary-2 { color: #460303 }
+.color-primary-3 { color: #730000 }
+.color-primary-4 { color: #A80000 }
+*/
